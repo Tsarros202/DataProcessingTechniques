@@ -68,9 +68,6 @@ Performance is evaluated on datasets with different correlation structures:
 - no correlation  
 
 
-::contentReference[oaicite:0]{index=0}
-
-
 ---
 
 ## How to run
