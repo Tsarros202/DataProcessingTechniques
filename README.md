@@ -89,3 +89,23 @@ Performance is evaluated on datasets with different correlation structures:
 pip install playwright
 playwright install
 python scraper.py
+
+### 2. Clean Data
+```bash
+jupyter notebook
+```
+
+Open the provided notebook and run all cells to produce the **final CSV dataset**
+
+### 3. Run skyline Analysis
+```bash
+cd mavenproject
+mvn clean package
+mvn exec:java -Dexec.mainClass="mavenproject.App"
+```
+This will:
+- load the processed CSV dataset
+- build the R-tree
+- compute skyline results
+
+- compare with brute-force output
