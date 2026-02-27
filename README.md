@@ -83,16 +83,13 @@ Performance is evaluated on datasets with different correlation structures:
 
 ### 1. (Optional) Run Scraper
 ```bash
-pip install playwright
+pip install -r requirements_notebook.txt```
 playwright install
-python scraper.py
-```
 
 ### 2. Clean Data
 ```bash
 jupyter notebook
 ```
-
 Open the provided notebook and run all cells to produce the **final CSV dataset**
 
 ### 3. Run skyline Analysis
@@ -101,6 +98,7 @@ cd mavenproject
 mvn clean package
 mvn exec:java -Dexec.mainClass="mavenproject.App"
 ```
+**mvn command needs maven installed and environmental variable configured to work**
 This will:
 - load the processed CSV dataset
 - build the R-tree
