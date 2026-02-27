@@ -89,6 +89,7 @@ Performance is evaluated on datasets with different correlation structures:
 pip install playwright
 playwright install
 python scraper.py
+```
 
 ### 2. Clean Data
 ```bash
