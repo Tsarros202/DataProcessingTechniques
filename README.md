@@ -99,6 +99,7 @@ mvn clean package
 mvn exec:java -Dexec.mainClass="mavenproject.App"
 ```
 **mvn command needs maven installed and environmental variable configured to work**
+
 This will:
 - load the processed CSV dataset
 - build the R-tree
